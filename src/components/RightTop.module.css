@@ -1,0 +1,22 @@
+.content{
+  display: grid;
+  grid-template-columns: 1fr, 4fr;
+  grid-template-rows: 1fr, 1fr;
+}
+.notification{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: start;
+  margin: 15px 15px 0px 15px;
+  display: flex;
+}
+.add{
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin-top: 12px;
+}
+.search{
+  grid-row: 2/3;
+  grid-template-columns: 2/3;
+  margin-top: 5px;
+}

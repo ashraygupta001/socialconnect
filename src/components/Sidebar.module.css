@@ -1,0 +1,9 @@
+.activeTab{
+  border-right: 4px solid rgb(29, 136, 207);
+  border-radius: 2px;
+}
+.sideTabs{
+  font-size: 30px;
+  color: white;
+  margin-top: 30px;
+}
