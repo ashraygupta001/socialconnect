@@ -3,13 +3,29 @@
   height: 770px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 3fr 2fr;
 }
 .topleft{
+  width: 360px;
+  height: 170px;
   margin: 40px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 3fr;
   border: 1px solid #626161a8;
   border-radius: 8px;
+}
+.num{
+  grid-row: 2/3;
+  grid-column: 1/2;
+  color: white;
+  font-size: x-large;
+  margin: 0px 0px 5px 20px;
+  align-self: center;
+}
+.growth{
+  grid-row: 3/4;
+  grid-column: 1/2;
+  color: blueviolet;
+  margin-left: 20px;
 }
