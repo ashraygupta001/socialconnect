@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import styles from "./Main.module.css";
 import Card from "./Card";
+import LChart from "./LineChart";
+
 
 const Main = () => {
   return (
@@ -39,6 +41,97 @@ const Main = () => {
             progressText="+40%"
             progress="40"
           />
+        </div>
+        <div className={styles.chartDiv}>
+          <LChart />
+        </div>
+        <div className={styles.horizontalBars}>
+          <p style={{ color: "white", margin: 12 }}>Total Application</p>
+          <span
+            style={{
+              margin: 10,
+              width: 10,
+              height: 10,
+              backgroundColor: "rgb(74, 160, 182)",
+              borderRadius: "50%",
+              display: "inline-block",
+            }}
+          >
+            <span style={{ color: "rgb(74, 160, 182)", marginLeft: 15 }}>
+              Application
+            </span>
+            <input type="range" value="70" style={{color: "rgb(74, 160, 182)"}}></input>
+          </span>
+          <span
+            style={{
+              margin: 10,
+              marginTop: 40,
+              width: 10,
+              height: 10,
+              backgroundColor: "rgb(74, 160, 182)",
+              borderRadius: "50%",
+              display: "inline-block",
+            }}
+          >
+            <span style={{ color: "rgb(74, 160, 182)", marginLeft: 15 }}>
+              Application
+            </span>
+            <input type="range" value="70" style={{color: "rgb(74, 160, 182)"}}></input>
+          </span>
+          <span
+            style={{
+              margin: 10,
+              marginTop: 40,
+              width: 10,
+              height: 10,
+              backgroundColor: "rgb(74, 160, 182)",
+              borderRadius: "50%",
+              display: "inline-block",
+            }}
+          >
+            <span style={{ color: "rgb(74, 160, 182)", marginLeft: 15 }}>
+              Application
+            </span>
+            <input type="range" value="70" style={{color: "rgb(74, 160, 182)"}}></input>
+          </span>
+          <span
+            style={{
+              margin: 10,
+              marginTop: 40,
+              width: 10,
+              height: 10,
+              backgroundColor: "rgb(74, 160, 182)",
+              borderRadius: "50%",
+              display: "inline-block",
+            }}
+          >
+            <span style={{ color: "rgb(74, 160, 182)", marginLeft: 15 }}>
+              Application
+            </span>
+            <input type="range" value="70" style={{color: "rgb(74, 160, 182)"}}></input>
+          </span>
+          <span
+            style={{
+              margin: 10,
+              marginTop: 40,
+              width: 10,
+              height: 10,
+              backgroundColor: "rgb(74, 160, 182)",
+              borderRadius: "50%",
+              display: "inline-block",
+            }}
+          >
+            <span style={{ color: "rgb(74, 160, 182)", marginLeft: 15 }}>
+              Application
+            </span>
+            <input type="range" value="70" style={{color: "rgb(74, 160, 182)"}}></input>
+          </span> 
+        </div>
+        <div className={styles.ref}>
+
+        </div>
+        <div className={styles.pie}>
+            <p style={{color:'white', margin: 5}}>Open Position by department</p>
         </div>
       </div>
     </Fragment>

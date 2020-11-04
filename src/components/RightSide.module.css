@@ -1,0 +1,14 @@
+.flex{
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+.applicants{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.person{
+  display: flex;
+  margin-top: 30px;
+}

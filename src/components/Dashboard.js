@@ -3,6 +3,7 @@ import styles from "./Dashboard.module.css";
 import Sidebar from "./Sidebar";
 import RightTop from "./RightTop";
 import Main from "./Main";
+import RightSide from "./RightSide";
 
 const Dashboard = () => {
   return (
@@ -23,6 +24,9 @@ const Dashboard = () => {
         </div>
         <div className={styles.main}>
           <Main />
+        </div>
+        <div className={styles.right}>
+          <RightSide />
         </div>
       </div>
     </Fragment>
