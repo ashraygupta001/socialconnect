@@ -1,31 +1,44 @@
 import React, { Fragment } from "react";
 import styles from "./Main.module.css";
-import CallMadeSharpIcon from "@material-ui/icons/CallMadeSharp";
+import Card from "./Card";
 
 const Main = () => {
   return (
     <Fragment>
       <div className={styles.container}>
-        <div className={styles.topleft}>
-          <div>
-            <p
-              style={{
-                color: "white",
-                fontSize: 15,
-                paddingLeft: 20,
-                paddingTop: 25,
-              }}
-            >
-              Total Applications
-            </p>
-          </div>
-          <div className={styles.num}>
-            <p>7956</p>
-          </div>
-          <div className={styles.growth}>
-            <CallMadeSharpIcon style={{color:'blueviolet', fontSize:20, marginRight:5}} />
-            <span>+3.59%</span>
-          </div>
+        <div className={styles.leftCard}>
+          <Card
+            Text="Total Application"
+            Number="7956"
+            Icon="Growth"
+            Growth="+3.59%"
+            color="blueviolet"
+            progressText="+70%"
+            progress="70"
+          />
+        </div>
+        <div className={styles.centerCard}>
+          <Card
+            Text="Shortlisted Candidates"
+            Number="4658"
+            Icon="Growth"
+            Growth="+3.59%"
+            color="white"
+            backgroundColor="rgb(29, 136, 207)"
+            progressText="+60%"
+            progress="60"
+          />
+        </div>
+        <div className={styles.rightCard}>
+          <Card
+            Text="Total Application"
+            Number="7956"
+            Icon="lose"
+            Growth="+3.59%"
+            color="rgb(206, 74, 74)"
+            progressText="+40%"
+            progress="40"
+          />
         </div>
       </div>
     </Fragment>

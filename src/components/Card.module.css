@@ -1,0 +1,31 @@
+.card {
+  width: 340px;
+  height: 170px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
+  border: 1px solid #626161a8;
+  border-radius: 8px;
+}
+.num{
+  grid-row: 2/3;
+  grid-column: 1/2;
+  color: white;
+  font-size: x-large;
+  margin: 0px 0px 5px 30px;
+  
+  align-self: center;
+}
+.growth{
+  grid-row: 3/4;
+  grid-column: 1/2;
+  margin: 0px 0px 5px 30px;
+  align-self: center;
+}
+.progress{
+  grid-template-columns: 2/3;
+  grid-row: 2/4;
+  width: 100px;
+  justify-self: center;
+  align-self: center;
+}
